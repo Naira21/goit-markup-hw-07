@@ -100,7 +100,7 @@ body {
 .accent-white {
   color: var(--main-bg-text-color);
 }
-.accent-black {
+.logo-header--black {
   color: var(--accent--text-color);
 }
 
@@ -119,12 +119,12 @@ body {
   margin-right: auto;
 }
 
-.nav-item:not(:last-child),
-.contacts-item:not(:last-child) {
+.site-nav__item:not(:last-child),
+.contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-item {
+.site-nav__item {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -142,7 +142,7 @@ body {
   color: var(--logo-button-color);
 }
 
-.nav-link {
+.site-nav__link {
   font-weight: 500;
   letter-spacing: 0.02em;
   padding-top: 32px;
@@ -165,11 +165,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current {
+.site-nav__item--current {
   color: var(--logo-button-color);
 }
 
-.current::after {
+.site-nav__item--current::after {
   content: '';
   display: block;
   height: 4px;
@@ -442,9 +442,9 @@ button:active {
 link:active,
 link:hover,
 link:focus,
-.nav-item:hover,
-.nav-item:active,
-.nav-item:focus {
+.site-nav__item:hover,
+.site-nav__item:active,
+.site-nav__item:focus {
   color: var(--logo-button-color);
 }
 
