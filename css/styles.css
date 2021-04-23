@@ -37,6 +37,10 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /*Основные параметры*/
 :root {
   --main-text-color: #212121;
@@ -150,7 +154,7 @@ body {
   position: relative;
 }
 
-.contacts-link {
+.contacts-list__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -179,10 +183,6 @@ body {
   position: absolute;
   bottom: 0px;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
 
 /*Основное*/
 
@@ -208,7 +208,7 @@ a {
   list-style-type: none;
 }
 
-.hero-bg {
+.hero {
   height: 600px;
   width: 1600px;
   display: flex;
@@ -220,12 +220,12 @@ a {
   margin-left: auto;
 }
 
-.hero-content {
+.hero--content {
   justify-content: center;
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -384,20 +384,19 @@ ul {
   margin-bottom: 16px;
 }
 /*Кнопки*/
-button {
+.button {
   display: inline-block;
   min-width: 73px;
   height: auto;
   font-family: inherit;
   cursor: pointer;
-  background-color: var(--team-bg-color);
+
+  background-color: var(--logo-button-color);
   border-color: transparent;
-  padding: 6px 22px;
   border-radius: 4px;
 
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main-bg-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-text {
@@ -405,12 +404,13 @@ button {
   font-weight: 500;
   color: var(--main-text-color);
   font-size: 16px;
+  padding: 6px 22px;
+  background-color: var(--team-bg-color);
 }
 .filter-button:not(:last-child) {
   margin-right: 8px;
 }
 .button-order {
-  display: inline-block;
   width: 200px;
   height: auto;
   padding: 10px 32px;
@@ -420,11 +420,6 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--main-bg-text-color);
-  background-color: var(--logo-button-color);
-  border-radius: 4px;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:focus,
@@ -461,11 +456,6 @@ link:focus,
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: var(--main-bg-text-color);
-  background-color: var(--logo-button-color);
-  border-radius: 4px;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-send {
@@ -477,14 +467,8 @@ link:focus,
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-
-  color: var(--main-bg-text-color);
-  background-color: var(--logo-button-color);
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer .button-signup {
@@ -668,7 +652,7 @@ address {
 
 /*Иконки*/
 
-.mail-icon {
+.contacts-list__mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -679,7 +663,7 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.smartphone-icon {
+.contacts-list__smartphone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -690,10 +674,10 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link:hover .mail-icon,
-.contacts-link:hover .smartphone-icon,
-.contacts-link:focus .mail-icon,
-.contacts-link:focus .smartphone-icon {
+.contacts-list__link:hover .contacts-list__mail-icon,
+.contacts-list__link:hover .contacts-list__smartphone-icon,
+.contacts-list__link:focus .contacts-list__mail-icon,
+.contacts-list__link:focus .contacts-list__smartphone-icon {
   fill: var(--logo-button-color);
 }
 
