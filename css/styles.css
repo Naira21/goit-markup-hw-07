@@ -205,7 +205,7 @@ body {
 .site-nav,
 .feature-list,
 .team-list,
-.portfolio-item,
+.portfolio-card,
 .activity-list,
 .link,
 .link-item {
@@ -398,7 +398,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-text {
+.button--text {
   font-style: normal;
   font-weight: 500;
   color: var(--main-text-color);
@@ -406,7 +406,7 @@ ul {
   padding: 6px 22px;
   background-color: var(--team-bg-color);
 }
-.filter-button:not(:last-child) {
+.portfolio-filter__button:not(:last-child) {
   margin-right: 8px;
 }
 .button-order {
@@ -475,7 +475,7 @@ footer .button--signup {
 }
 
 /*Порфтолио*/
-.portfolio-list-title {
+.portfolio-card__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -483,14 +483,14 @@ footer .button--signup {
   margin-bottom: 4px;
 }
 
-.portfolio-card-info {
+.portfolio-card__info {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.portfolio-list-type {
+.portfolio-card__type {
   margin-bottom: 0px;
   color: var(--link-paragraph-color);
 
@@ -504,7 +504,7 @@ footer .button--signup {
   margin-bottom: 50px;
 }
 
-.portfolio-item {
+.portfolio-card {
   display: block;
 
   transition-property: box-shadow;
@@ -515,7 +515,7 @@ footer .button--signup {
   position: relative;
   overflow: hidden;
 }
-.overlay-text {
+.overlay__text {
   content: '';
   position: absolute;
   width: 100%;
@@ -534,7 +534,7 @@ footer .button--signup {
   opacity: 1;
 } */
 
-.portfolio-card-text {
+.portfolio-card__desc {
   position: absolute;
   top: 0;
   left: 0;
@@ -551,14 +551,14 @@ footer .button--signup {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-item:hover .portfolio-card-text {
+.portfolio-card:hover .portfolio-card__desc {
   opacity: 1;
 }
-.portfolio-item:hover .overlay-text {
+.portfolio-card:hover .overlay__text {
   transform: translateY(0%);
   opacity: 1;
 }
-.portfolio-item:hover {
+.portfolio-card:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .grid {
@@ -567,7 +567,7 @@ footer .button--signup {
   margin-top: -30px;
   margin-left: -30px;
 }
-.grid-item {
+.grid__item {
   flex-basis: calc((100% - 30px * 3) / 3);
   margin-top: 30px;
   margin-left: 30px;

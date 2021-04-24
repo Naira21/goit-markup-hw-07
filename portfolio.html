@@ -58,15 +58,21 @@
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="portfolio-filter list">
-            <li class="filter-button"><button type="button" class="button button-text">Все</button></li>
-            <li class="filter-button"><button type="button" class="button button-text">Веб-сайты</button></li>
-            <li class="filter-button"><button type="button" class="button button-text">Приложения</button></li>
-            <li class="filter-button"><button type="button" class="button button-text">Дизайн</button></li>
-            <li class="filter-button"><button type="button" class="button button-text">Маркетинг</button></li>
+            <li class="portfolio-filter__button"><button type="button" class="button button--text">Все</button></li>
+            <li class="portfolio-filter__button">
+              <button type="button" class="button button--text">Веб-сайты</button>
+            </li>
+            <li class="portfolio-filter__button">
+              <button type="button" class="button button--text">Приложения</button>
+            </li>
+            <li class="portfolio-filter__button"><button type="button" class="button button--text">Дизайн</button></li>
+            <li class="portfolio-filter__button">
+              <button type="button" class="button button--text">Маркетинг</button>
+            </li>
           </ul>
           <ul class="grid list">
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img
                     src="./images/portfolio/technokryak.jpg"
@@ -74,21 +80,21 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-text">
-                    <p class="portfolio-card-text">
+                  <div class="overlay__text">
+                    <p class="portfolio-card__desc">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Технокряк</h2>
-                  <p class="portfolio-list-type" lang="en">Веб-сайт</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Технокряк</h2>
+                  <p class="portfolio-card__type" lang="en">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img
                     src="./images/portfolio/poster.jpg"
@@ -96,64 +102,64 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-text"><p class="portfolio-card-text"></p></div>
+                  <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="portfolio-list-type" lang="en">Дизайн</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio-card__type" lang="en">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/seafood.jpg" alt="Лого ресторана Seafood" width="370" height="294" />
-                  <div class="overlay-text"><p class="portfolio-card-text"></p></div>
+                  <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Ресторан Seafood</h2>
-                  <p class="portfolio-list-type" lang="en">Приложение</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Ресторан Seafood</h2>
+                  <p class="portfolio-card__type" lang="en">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/project_prime.jpg" alt="Черные наушники" width="370" height="294" />
-                  <div class="overlay-text"><p class="portfolio-card-text"></p></div>
+                  <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Проект Prime</h2>
-                  <p class="portfolio-list-type" lang="en">Маркетинг</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Проект Prime</h2>
+                  <p class="portfolio-card__type" lang="en">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/project_boxes.jpg" alt="Две коробки" width="370" height="294" />
-                  <div class="overlay-text"><p class="portfolio-card-text"></p></div>
+                  <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Проект Boxes</h2>
-                  <p class="portfolio-list-type" lang="en">Приложение</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Проект Boxes</h2>
+                  <p class="portfolio-card__type" lang="en">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/inspiration_has_no_borders.jpg" alt="Монитор" width="370" height="294" />
-                  <div class="overlay-text"><p class="portfolio-card-text"></p></div>
+                  <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Inspiration has no Borders</h2>
-                  <p class="portfolio-list-type" lang="en">Веб-сайт</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Inspiration has no Borders</h2>
+                  <p class="portfolio-card__type" lang="en">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img
                     src="./images/portfolio/limited_edition.jpg"
@@ -161,35 +167,35 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-text"><p class="portfolio-card-text"></p></div>
+                  <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Издание Limited Edition</h2>
-                  <p class="portfolio-list-type" lang="en">Дизайн</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Издание Limited Edition</h2>
+                  <p class="portfolio-card__type" lang="en">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/project_lab.jpg" alt="Бирка проекта LAB" width="370" height="294" />
-                  <div class="overlay-text"><p class="portfolio-card-text"></p></div>
+                  <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Проект LAB</h2>
-                  <p class="portfolio-list-type" lang="en">Маркетинг</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Проект LAB</h2>
+                  <p class="portfolio-card__type" lang="en">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="grid-item">
-              <a href="" class="portfolio-item">
+            <li class="grid__item">
+              <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/growing_business.jpg" alt="Ноутбук" width="370" height="294" />
-                  <div class="overlay-text"><p class="portfolio-card-text"></p></div>
+                  <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
-                <div class="portfolio-card-info">
-                  <h2 class="portfolio-list-title">Growing Business</h2>
-                  <p class="portfolio-list-type" lang="en">Приложение</p>
+                <div class="portfolio-card__info">
+                  <h2 class="portfolio-card__title">Growing Business</h2>
+                  <p class="portfolio-card__type" lang="en">Приложение</p>
                 </div>
               </a>
             </li>
