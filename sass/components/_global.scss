@@ -47,3 +47,31 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
+
+.visually-hidden {
+  clip: rect(1px 1px 1px 1px);
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin: 0;
+}
