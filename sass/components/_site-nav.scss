@@ -44,3 +44,9 @@
   position: absolute;
   bottom: 0px;
 }
+
+.site-nav__item:hover,
+.site-nav__item:active,
+.site-nav__item:focus {
+  color: var(--logo-button-color);
+}

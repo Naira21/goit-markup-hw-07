@@ -6,13 +6,14 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts-list__item:not(:last-child) {
-  margin-right: 50px;
-}
 
-.contacts-list:hover {
-  color: var(--logo-button-color);
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &:hover {
+    color: var(--logo-button-color);
+  }
 }
 
 .contacts-list__link {

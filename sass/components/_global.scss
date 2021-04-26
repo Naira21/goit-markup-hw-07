@@ -75,3 +75,14 @@ ul {
   text-align: center;
   margin: 0;
 }
+
+link:active,
+link:hover,
+link:focus {
+  color: var(--logo-button-color);
+}
+
+// .link:hover,
+// .link:focus {
+//   color: var(--logo-button-color);
+// }
