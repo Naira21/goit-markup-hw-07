@@ -65,7 +65,8 @@
   color: var(--main-bg-text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-card:hover .portfolio-card__desc {
-  opacity: 1;
+
+  .portfolio-card:hover & {
+    opacity: 1;
+  }
 }
