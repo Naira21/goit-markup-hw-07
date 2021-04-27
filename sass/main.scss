@@ -1,9 +1,9 @@
-@import './components/vendors';
+@import './utils/mixin';
 /*Глобальный сброс стилей*/
-@import './components/global.scss';
+@import './base/global';
 
 /*Основные параметры*/
-@import '/utils/variables';
+@import './utils/variables';
 
 /*Шапка сайта*/
 @import './components/header';
@@ -47,8 +47,3 @@
 @import './components/grid';
 @import './components/footer';
 @import './components/signup';
-
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-  fill: var(--main-bg-text-color);
-}

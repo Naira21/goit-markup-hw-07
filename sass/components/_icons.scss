@@ -51,6 +51,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--main-bg-text-color);
+  }
 }
 
 .signup__icon {
