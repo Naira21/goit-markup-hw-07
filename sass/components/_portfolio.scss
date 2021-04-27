@@ -1,5 +1,5 @@
 .portfolio-bg {
-  background-color: var(--main-bg-text-color);
+  @include background;
 }
 
 .portfolio-card {

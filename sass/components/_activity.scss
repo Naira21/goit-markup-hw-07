@@ -1,5 +1,5 @@
 .activity-bg {
-  background-color: var(--main-bg-text-color);
+  @include background;
 }
 
 .activity-bg.section {
